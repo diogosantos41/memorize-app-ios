@@ -14,6 +14,7 @@ struct MemorizeGameView: View {
         VStack {
             ScrollView {
                 cards
+                    .animation(.default, value: gameViewModel.cards)
             }
             Button("Shuffle") {
                 gameViewModel.shuffleCards()
@@ -24,11 +25,15 @@ struct MemorizeGameView: View {
     
     var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 85), spacing: 0)], spacing: 0) {
-            ForEach(gameViewModel.cards.indices, id: \.self) { index in
-                CardView(gameViewModel.cards[index])
+            ForEach(gameViewModel.cards) { card in
+                CardView(card)
+                    .aspectRatio(2/3, contentMode: .fit)
+                    .padding(4)
+                    .onTapGesture {
+                        gameViewModel.chooseCard(card)
+                    }
             }
-            .aspectRatio(2/3, contentMode: .fit)
-            .padding(4)
+          
         }
         .foregroundColor(.green)
     }
@@ -52,7 +57,8 @@ struct CardView: View {
                     .font(.system(size: 200))
                     .minimumScaleFactor(0.01)
                     .aspectRatio(1, contentMode: .fit)
-            }.opacity(card.isFaceUp ? 1 : 0)
+            }
+            .opacity(card.isFaceUp ? 1 : 0)
             cardBase.fill().opacity(card.isFaceUp ? 0 : 1)
         }
     }
