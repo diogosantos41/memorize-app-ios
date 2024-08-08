@@ -19,25 +19,32 @@ struct MemorizeGameManager<CardContent> where CardContent: Equatable {
 
         }
     }
-    
-    var selectedFaceUpCard: Int?
-    
+
+    var firstSelectedFaceUpCard: Int?
+    var secondSelectedFaceUpCard: Int?
+
     mutating func chooseCard(_ card: Card) {
-        if let choosenIndex = cards.firstIndex(of: card) {
-            if !cards[choosenIndex].isFaceUp && !cards[choosenIndex].isMatched {
-                cards[choosenIndex].isFaceUp = true
-                if let potencialMatchIndex = selectedFaceUpCard {
-                    if cards[potencialMatchIndex].content == cards[choosenIndex].content {
-                        cards[potencialMatchIndex].isMatched = true
-                        cards[choosenIndex].isMatched = true
-                        selectedFaceUpCard = nil
+        if let chosenIndex = cards.firstIndex(of: card) {
+
+            if !cards[chosenIndex].isFaceUp && !cards[chosenIndex].isMatched {
+                cards[chosenIndex].isFaceUp = true
+
+                if let firstIndex = firstSelectedFaceUpCard {
+                    if let secondIndex = secondSelectedFaceUpCard {
+                        if cards[firstIndex].content == cards[secondIndex].content {
+                            cards[firstIndex].isMatched = true
+                            cards[secondIndex].isMatched = true
+                        } else {
+                            cards[firstIndex].isFaceUp = false
+                            cards[secondIndex].isFaceUp = false
+                        }
+                        firstSelectedFaceUpCard = chosenIndex
+                        secondSelectedFaceUpCard = nil
                     } else {
-                        cards[potencialMatchIndex].isFaceUp = false
-                        cards[choosenIndex].isFaceUp = false
-                        selectedFaceUpCard = nil
+                        secondSelectedFaceUpCard = chosenIndex
                     }
                 } else {
-                    selectedFaceUpCard = choosenIndex
+                    firstSelectedFaceUpCard = chosenIndex
                 }
             }
         }

@@ -8,10 +8,10 @@
 import SwiftUI
 
 class MemorizeGameViewModel: ObservableObject {
-    private static let emojis = ["🐸", "👻", "💍", "🎒", "🐱", "🦄", "🪼", "🚛", "🎀", "🔒"]
+    private static let emojis = ["🐸", "👻", "💍", "🎒", "🐱", "🦄", "🪼", "🚛", "🎀", "🔒", "✂️", "🔱", "♻️", "🔔", "💌"]
     
     private static func createGameManager() -> MemorizeGameManager<String> {
-        return MemorizeGameManager(numberOfPairsOfCards: 10) { pairIndex in
+        return MemorizeGameManager(numberOfPairsOfCards: 15) { pairIndex in
             if(emojis.indices.contains(pairIndex)) {
                 return emojis[pairIndex]
             } else {

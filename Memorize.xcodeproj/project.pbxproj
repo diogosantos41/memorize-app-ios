@@ -13,6 +13,7 @@
 		3D0E56B22C617C500057F269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0E56B12C617C500057F269 /* Preview Assets.xcassets */; };
 		3D0E56B92C63903D0057F269 /* MemorizeGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E56B82C63903D0057F269 /* MemorizeGameManager.swift */; };
 		3D0E56BB2C6394280057F269 /* MemorizeGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E56BA2C6394280057F269 /* MemorizeGameViewModel.swift */; };
+		3D0E56BD2C64F4AD0057F269 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E56BC2C64F4AD0057F269 /* AspectVGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		3D0E56B12C617C500057F269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D0E56B82C63903D0057F269 /* MemorizeGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeGameManager.swift; sourceTree = "<group>"; };
 		3D0E56BA2C6394280057F269 /* MemorizeGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeGameViewModel.swift; sourceTree = "<group>"; };
+		3D0E56BC2C64F4AD0057F269 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3D0E56AC2C617C4D0057F269 /* MemorizeGameView.swift */,
 				3D0E56AE2C617C500057F269 /* Assets.xcassets */,
 				3D0E56B02C617C500057F269 /* Preview Content */,
+				3D0E56BC2C64F4AD0057F269 /* AspectVGrid.swift */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				3D0E56AD2C617C4D0057F269 /* MemorizeGameView.swift in Sources */,
 				3D0E56AB2C617C4D0057F269 /* MemorizeApp.swift in Sources */,
 				3D0E56B92C63903D0057F269 /* MemorizeGameManager.swift in Sources */,
+				3D0E56BD2C64F4AD0057F269 /* AspectVGrid.swift in Sources */,
 				3D0E56BB2C6394280057F269 /* MemorizeGameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
