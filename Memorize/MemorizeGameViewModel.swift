@@ -8,6 +8,9 @@
 import SwiftUI
 
 class MemorizeGameViewModel: ObservableObject {
+    
+    typealias Card = MemorizeGameManager<String>.Card
+    
     private static let emojis = ["🐸", "👻", "💍", "🎒", "🐱", "🦄", "🪼", "🚛", "🎀", "🔒", "✂️", "🔱", "♻️", "🔔", "💌"]
     
     private static func createGameManager() -> MemorizeGameManager<String> {
@@ -19,15 +22,19 @@ class MemorizeGameViewModel: ObservableObject {
             }
         }
     }
-        
-    @Published private var gameManager = createGameManager()
-
     
-    var cards: Array<MemorizeGameManager<String>.Card> {
-        return gameManager.cards
+    @Published private var gameManager = createGameManager()
+    
+    
+    var cards: Array<Card> {
+        gameManager.cards
     }
     
-    func chooseCard(_ card: MemorizeGameManager<String>.Card) {
+    var color: Color {
+        .orange
+    }
+    
+    func chooseCard(_ card: Card) {
         gameManager.chooseCard(card)
     }
     
