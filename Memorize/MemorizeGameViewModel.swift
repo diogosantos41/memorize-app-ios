@@ -34,6 +34,10 @@ class MemorizeGameViewModel: ObservableObject {
         .orange
     }
     
+    var score: Int {
+        return gameManager.score
+    }
+    
     func chooseCard(_ card: Card) {
         gameManager.chooseCard(card)
     }

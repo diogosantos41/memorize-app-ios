@@ -17,6 +17,7 @@
 		3D0E56BF2C67E2420057F269 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E56BE2C67E2420057F269 /* CardView.swift */; };
 		3D0E56C12C67ED780057F269 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E56C02C67ED780057F269 /* Pie.swift */; };
 		3D0E56C32C67F2500057F269 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0E56C22C67F2500057F269 /* Cardify.swift */; };
+		3D715A2B2C6BE6400086E6D3 /* FlyingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D715A2A2C6BE6400086E6D3 /* FlyingNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3D0E56BE2C67E2420057F269 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3D0E56C02C67ED780057F269 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = SOURCE_ROOT; };
 		3D0E56C22C67F2500057F269 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		3D715A2A2C6BE6400086E6D3 /* FlyingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				3D0E56BA2C6394280057F269 /* MemorizeGameViewModel.swift */,
 				3D0E56AA2C617C4D0057F269 /* MemorizeApp.swift */,
 				3D0E56AC2C617C4D0057F269 /* MemorizeGameView.swift */,
+				3D715A2A2C6BE6400086E6D3 /* FlyingNumber.swift */,
 				3D0E56AE2C617C500057F269 /* Assets.xcassets */,
 				3D0E56B02C617C500057F269 /* Preview Content */,
 				3D0E56BC2C64F4AD0057F269 /* AspectVGrid.swift */,
@@ -157,6 +160,7 @@
 			files = (
 				3D0E56AD2C617C4D0057F269 /* MemorizeGameView.swift in Sources */,
 				3D0E56AB2C617C4D0057F269 /* MemorizeApp.swift in Sources */,
+				3D715A2B2C6BE6400086E6D3 /* FlyingNumber.swift in Sources */,
 				3D0E56C32C67F2500057F269 /* Cardify.swift in Sources */,
 				3D0E56B92C63903D0057F269 /* MemorizeGameManager.swift in Sources */,
 				3D0E56BD2C64F4AD0057F269 /* AspectVGrid.swift in Sources */,
